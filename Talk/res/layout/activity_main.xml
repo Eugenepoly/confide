@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/et_login_account"
+        style="@style/BasicEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:hint="@string/login_account_hint" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        style="@style/PassEditText"
+        android:layout_below="@id/et_login_account"
+        android:layout_marginTop="13dp"
+        android:hint="@string/login_password_hint"/>
+
+    <RelativeLayout style="@style/WrapLayout" 
+        android:layout_below="@id/et_login_password"
+        android:layout_marginTop="15dp">
+
+        <Button
+            style="@style/ShadowTextButton"
+            android:id="@+id/login"
+            android:background="@drawable/btn_style_one"
+            android:text="@string/login"
+            android:textColor="@color/mm_style_one_btn_text"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
